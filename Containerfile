@@ -8,4 +8,4 @@ WORKDIR /app
 COPY DiaryRestServer.java .
 
 # コンテナ起動時にJavaアプリケーションを実行
-CMD ["java", "DiaryRestServer.java", "diary.txt"]
+CMD ["java", "DiaryRestServer.java", "/data/diary.txt"]
